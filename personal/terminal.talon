@@ -29,6 +29,10 @@ git commit:
     insert("git commit -m ''")
     key("left")
 
+git push:
+    insert("git push")
+    key("enter")
+
 git pull:
     insert("git pull")
     key("enter")
