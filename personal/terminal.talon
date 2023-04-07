@@ -3,26 +3,39 @@ app.exe: WindowsTerminal.exe
 change directory <user.letter>:
     insert("cd "+letter)
     key("tab")
-    
+
 change directory up:
     insert("cd ..")
     key("enter")
 
 make directory:
     insert("mkdir ")
-    
+
 list directory:
     insert("ls ")
     key("enter")
 
 neo vim <user.letter>:
     insert("nvim "+letter)
-    key("tab") 
+    key("tab")
 
+git status:
+    insert("git status")
+
+git add <user.letter>:
+    insert("git add " + letter)
+
+git commit:
+    insert("git commit -m ''")
+    key("left")
+
+git pull:
+    insert("git pull")
+    key("enter")
 
 wipe line:
     key("backspace:20")
-    
+
 vim vertical split:
     insert(":vspl")
     key("enter")
