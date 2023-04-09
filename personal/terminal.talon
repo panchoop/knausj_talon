@@ -33,66 +33,86 @@ git push:
     insert("git push")
     key("enter")
 
+git checkout:
+    insert("git checkout ")
+
+git submodule update:
+    insert("git submodule update --recursive --init")
+    key("enter")
+
 git pull:
     insert("git pull")
     key("enter")
 
+git merge:
+    insert("git merge")
+
 wipe line:
     key("backspace:20")
 
-vim vertical split:
+next paragraph:
+    insert("}")
+
+be I center:
+    insert("zz")
+
+be I split:
+    insert(":spl")
+    key("enter")
+
+be I vertical split:
     insert(":vspl")
     key("enter")
 
-vim terminal:
+be I terminal:
     insert(":term")
     key("enter")
 
-vim quit:
+be I quit:
     insert(":q")
     key("enter")
 
-vim save:
+be I save:
     insert(":w")
     key("enter")
 
-vim left pane:
+be I left pane:
     key("ctrl-w")
     insert("h")
 
-vim right pane:
+be I right pane:
     key("ctrl-w")
     insert("l")
 
-vim top pane:
+be I top pane:
     key("ctrl-w")
     insert("k")
 
-vim bottom pane:
+be I bottom pane:
     key("ctrl-w")
     insert("j")
 
-vim go west:
+be I go west:
     key("ctrl-w")
     insert("h")
 
-vim go east:
+be I go east:
     key("ctrl-w")
     insert("l")
 
-vim go north:
+be I go north:
     key("ctrl-w")
     insert("k")
 
-vim go south:
+be I go south:
     key("ctrl-w")
     insert("j")
 
 
-vim send terminal:
+be I send terminal:
     insert("\\t")
 
-vim last buffer:
+be I last buffer:
     insert(":b#")
     key("enter")
 
