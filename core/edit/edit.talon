@@ -1,6 +1,6 @@
-find it: edit.find()
+#find it: edit.find()
 
-next one: edit.find_next()
+#next one: edit.find_next()
 
 go word left: edit.word_left()
 
@@ -28,9 +28,9 @@ go way down: edit.file_end()
 
 go way up: edit.file_start()
 
-go bottom: edit.file_end()
+#go bottom: edit.file_end()
 
-go top: edit.file_start()
+#go top: edit.file_start()
 
 go page down: edit.page_down()
 
@@ -144,9 +144,9 @@ copy line:
     edit.copy()
 
 #cut commands
-cut all:
-    edit.select_all()
-    edit.cut()
+#cut all:
+#    edit.select_all()
+#    edit.cut()
 #to do: do we want these variants
 # cut left:
 #      edit.select_all()
@@ -161,20 +161,20 @@ cut all:
 #     edit.select_all()
 #     edit.cut()
 
-cut word:
-    edit.select_word()
-    edit.cut()
-
-cut word left: user.cut_word_left()
-
-cut word right: user.cut_word_right()
-
-cut line: user.cut_line()
-
-(pace | paste) all:
-    edit.select_all()
-    edit.paste()
-
-# duplication
-clone that: edit.selection_clone()
-clone line: edit.line_clone()
+#cut word:
+#    edit.select_word()
+#    edit.cut()
+#
+#cut word left: user.cut_word_left()
+#
+#cut word right: user.cut_word_right()
+#
+#cut line: user.cut_line()
+#
+#(pace | paste) all:
+#    edit.select_all()
+#    edit.paste()
+#
+## duplication
+#clone that: edit.selection_clone()
+#clone line: edit.line_clone()

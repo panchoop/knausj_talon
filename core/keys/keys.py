@@ -127,7 +127,8 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
+    #"alt": "alt",  #'alter': 'alt',
+    "alternate": "alt",
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
@@ -239,7 +240,7 @@ ctx.lists["self.arrow_key"] = {
 }
 
 simple_keys = [
-    "end",
+    #"end",
     "enter",
     "escape",
     "home",
@@ -257,6 +258,7 @@ alternate_keys = {
     "forward delete": "delete",
     "page up": "pageup",
     "page down": "pagedown",
+    "end end": "end",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
