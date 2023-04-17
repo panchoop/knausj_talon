@@ -15,9 +15,24 @@ list directory:
     insert("ls ")
     key("enter")
 
+neo vim main:
+    insert("nvimx")
+    key("enter")
+
 neo vim <user.letter>:
     insert("nvim "+letter)
     key("tab")
+
+build execute:
+    insert("build/exec.sh")
+    key("enter")
+
+grep recursive:
+    insert("grep -r '' .")
+    edit.left()
+    edit.left()
+    edit.left()
+
 
 git status:
     insert("git status")
@@ -47,6 +62,12 @@ git pull:
 git merge:
     insert("git merge")
 
+tmux:
+    insert("tmux")
+
+tmux attach:
+    insert("tmux attach")
+
 wipe line:
     key("backspace:20")
 
@@ -72,9 +93,20 @@ be I quit:
     insert(":q")
     key("enter")
 
+be I quit all:
+    insert(":qa")
+    key("enter")
+
 be I save:
     insert(":w")
     key("enter")
+
+be I fold close:
+    insert("zc")
+
+be I fold open:
+    insert("zczA")
+
 
 be I left pane:
     key("ctrl-w")
@@ -115,6 +147,12 @@ be I send terminal:
 be I last buffer:
     insert(":b#")
     key("enter")
+
+be I open source:
+    insert(":e src/")
+
+be I open header:
+    insert(":e include/")
 
 code if:
     insert("if ")
